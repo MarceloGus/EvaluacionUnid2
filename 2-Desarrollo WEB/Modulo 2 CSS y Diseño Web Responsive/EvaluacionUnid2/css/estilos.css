@@ -8,7 +8,7 @@ body{
 }
 header{
 	background-color: #5B7989;
-	border-radius: 10px 0 0 0 ;
+	border-radius: 10px 10px 0 0 ;
 }
 header h1{
 	color: white;
@@ -16,30 +16,81 @@ header h1{
 a{
 	color: white;
 }
-header a .inicio{
+span{
+	color: white;
+}
+/*header a .inicio{
 	text-decoration-line: none;
 }
 header a .retratos and a .paisajes{
 	text-decoration-line: underline;
-}
-nav{
-	right: 0;
-}
+}*/
+/* a{
+	margin-right: 0px;
+} */
+
 .img1{
-	width: 570px;
-	height: 370px;
+	width: 70%;
+	height: 70%;
+	display:block;
+	margin:auto;
+	padding: 20px;
 }
 .img2{
 	width: 40%;
-	height: 170px;
+	height: 270px;
+	padding: 20px;
 }
 .img3{
 	width: 40%;
-	height: 170px;
+	height: 270px;
+	padding: 20px;
 }
-#principal{
+div #principal{
 	background-color:#82c3a6;
-	}
-#secundarias{
+}
+div #secundarias{
 	background-color:#d5c75f;
 }
+
+/*@media (min-width: 900px) {
+  .cuerpo{
+    margin-left: 7em;
+    margin-right: 7em;
+  }
+  .texto{
+
+    font-size: 1.6em;
+    font-family: helvetica;
+  }
+  .imagen{
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+  }
+}
+
+@media (max-width: 900px) {
+  .cuerpo{
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  .texto{
+
+    font-size: 1.3em;
+    font-family: helvetica;
+  }
+  .imagen{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%
+  }
+}*/
+/*.contenedor{
+  display: flex;
+  flex-flow: row wrap;
+}
+div [class*="bloque"]{
+  min-height: 200px;
+  flex: 1 2 40%;
+}*/
