@@ -1,7 +1,40 @@
 body{
-	background-color: #5B7989
+	font-family: Dancing scrip, cursive;
+	background-color: black;
 }
-h1{
-	color: #02010a;
-	font-family: Dancing scrip;
+#contenido{
+	width: 900px;
+	margin: auto;
+}
+header{
+	background-color: #5B7989;
+	border-radius: 10px;
+}
+header h1{
+	color: white;
+}
+a{
+	color: white;
+}
+header a .inicio{
+	text-decoration-line: none;
+}
+header a .retratos and a .paisajes{
+	text-decoration-line: underline;
+}
+nav{
+
+}
+.img1{
+	width: 85%;
+	height: 370px;
+	background-color: #82c3a6;
+}
+.img2{
+	width: 40%;
+	height: 170px;
+}
+.img3{
+	width: 40%;
+	height: 170px;
 }
