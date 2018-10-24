@@ -3,12 +3,12 @@ body{
 	background-color: black;
 }
 #contenido{
-	width: 900px;
+	max-width: 900px;
 	margin: auto;
 }
 header{
 	background-color: #5B7989;
-	border-radius: 10px;
+	border-radius: 10px 0 0 0 ;
 }
 header h1{
 	color: white;
@@ -23,12 +23,11 @@ header a .retratos and a .paisajes{
 	text-decoration-line: underline;
 }
 nav{
-
+	right: 0;
 }
 .img1{
-	width: 85%;
+	width: 570px;
 	height: 370px;
-	background-color: #82c3a6;
 }
 .img2{
 	width: 40%;
@@ -37,4 +36,10 @@ nav{
 .img3{
 	width: 40%;
 	height: 170px;
+}
+#principal{
+	background-color:#82c3a6;
+	}
+#secundarias{
+	background-color:#d5c75f;
 }
