@@ -1,5 +1,9 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('DancingScript-Regular.otf');
+}
 body{
-	font-family: Dancing scrip, cursive;
+	font-family: 'Dancing Script';
 	background-color: black;
 }
 #contenido{
@@ -7,18 +11,28 @@ body{
 	margin: auto;
 }
 header{
-	background-color: #5B7989;
+  background-color: #5B7989;
 	border-radius: 10px 10px 0 0 ;
+  padding: 1px;
+  margin-right: 3px;
 }
-header h1{
+header nav{
 	color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+span{
+  color: white;
+  float: right;
+  padding: 2px;
 }
 a{
 	color: white;
+  float: right;
+  padding: 2px;
 }
-span{
-	color: white;
-}
+
 /*header a .inicio{
 	text-decoration-line: none;
 }
@@ -30,8 +44,8 @@ header a .retratos and a .paisajes{
 } */
 
 .img1{
-	width: 70%;
-	height: 70%;
+	width: 90%;
+	height: 410px;
 	display:block;
 	margin:auto;
 	padding: 20px;
@@ -51,6 +65,10 @@ div #principal{
 }
 div #secundarias{
 	background-color:#d5c75f;
+}
+footer{
+  background-color:#D82222;
+  height: 25%;
 }
 
 /*@media (min-width: 900px) {
