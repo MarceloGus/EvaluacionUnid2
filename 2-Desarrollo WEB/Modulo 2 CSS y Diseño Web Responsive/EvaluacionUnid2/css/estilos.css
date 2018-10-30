@@ -5,62 +5,63 @@
 body{
 	font-family: 'Dancing Script';
 	background-color: black;
+  text-align: center;
 }
+
+/*encabezado*/
 #contenido{
-	max-width: 900px;
+	width: 900px;
 	margin: auto;
+  border-radius: 25px;
 }
 .inicio{
   text-decoration-line: none;
 }
-.retratos and .paisajes{
-  text-decoration-line: underline;
-}
 
-header{
-  background-color: #5B7989;
-	border-radius: 10px 10px 0 0 ;
-  padding: 1px;
-  margin-right: 3px;
-}
-header nav{
+header {
 	color: white;
-  margin-left: 10px;
-  margin-right: 10px;
+  background-color: #5B7989;
+  border-radius: 10px 10px 0 0 ;
   font-size: 20px;
-  text-shadow: 2px 2px #02010a;
-}
-span{
-  color: white;
-  float: right;
-  padding: 2px;
+  text-shadow: 0 2px #02010a;
+  display: flex;
+  flex-direction: row;
 }
 a{
 	color: white;
-  float: right;
-  padding: 2px;
-}
-div #enlapaisa{
-  color: black;
-  text-align: center;
-  
 }
 
 div #principal{
   background-color:#82c3a6;
 }
+.titulo,.enlaces{
+  margin: auto;
+} 
+
 .img1{
 	width: 90%;
 	height: 90%;
 	display:block;
 	margin:auto;
 	padding: 20px;
+  box-shadow: 1px #02010a;
 }
+header a .inicio{
+  text-decoration-line: none;
+}
+header a .retratos and a .paisajes{
+  text-decoration-line: underline;
+}
+
 /*dos columnas fotos*/
 .img2,.img3{
   width: 75%;
   height: 80%;
   box-shadow: 1px 1px 1px black;
+}
+#enlapaisa,#enlaretra{
+  color: black;
+  float: none;
 }
 .contenedor{
   display: flex;
@@ -69,6 +70,7 @@ div #principal{
   color: black;
   padding:50px 0 40px 0;
   background-color: #d5c75f;
+  border-style: 5px;
 }
 div [class*="imagen"]{
   max-width: 900px;
@@ -91,11 +93,14 @@ div [class*="imagen"]{
   background-color: #d5c75f;
   text-align: center;
 }*/
+/*pie de pagina*/
 div[class*="colum"]{
   display: flex;
   flex-direction: column;
-  padding-left: 8%;
+  padding-left: 1%;
   color: black;
+  flex:1 2 30%;
+  font-size: 19px;
 }
 footer {
   background-color:#C6d5c5;
@@ -104,20 +109,17 @@ footer {
   border-radius: 0 0 10px 10px;
   text-align: center;
 }
-ul{
-  list-style-image: url(logo-vector-facebook.jpg);
-  list-style-position: inside;
+.faceb{
+  width: 5%;
+  height: 5%;
 }
+
+
 
 /*div #secundarias{
   background-color:#d5c75f;
 }*/
-header a .inicio{
-  text-decoration-line: none;
-}
-header a .retratos and a .paisajes{
-  text-decoration-line: underline;
-}
+
 /* a{
   margin-right: 0px;
 } */
@@ -163,11 +165,30 @@ header a .retratos and a .paisajes{
 }*/
 
 /*media queries*/
-@media (max-width:600px) {
+@media (max-width:900px) {
+  #contenido{
+    width: 100%;
+  }
+ header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ }
+ .enlaces{
+    padding-bottom: 20px;
+ }
+ footer{
+    display: flex;
+    flex-direction: column;
+ }
+ div[class*="column"]{
+    padding-left: 0;
+    padding-bottom: 5%;
+ } 
+}
+@media (max-width:900px) {
   .contenedor{
     display: flex;
     flex-direction:column;
   }
 }
-
-
