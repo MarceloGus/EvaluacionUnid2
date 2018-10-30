@@ -17,7 +17,6 @@ body{
 .inicio{
   text-decoration-line: none;
 }
-
 header {
 	color: white;
   background-color: #5B7989;
@@ -30,7 +29,6 @@ header {
 a{
 	color: white;
 }
-
 div #principal{
   background-color:#82c3a6;
 }
@@ -38,9 +36,10 @@ div #principal{
   margin: auto;
 } 
 
+/*foto principal una columna*/
 .img1{
-	width: 90%;
-	height: 90%;
+	width: 45%;
+	height: 15%;
 	display:block;
 	margin:auto;
 	padding: 20px;
@@ -55,9 +54,10 @@ header a .retratos and a .paisajes{
 
 /*dos columnas fotos*/
 .img2,.img3{
-  width: 75%;
-  height: 80%;
+  width: 70%;
+  height: 95%;
   box-shadow: 1px 1px 1px black;
+
 }
 #enlapaisa,#enlaretra{
   color: black;
@@ -68,14 +68,17 @@ header a .retratos and a .paisajes{
   flex-direction: row;
   text-align: center;
   color: black;
-  padding:50px 0 40px 0;
+  padding:40px 0 60px 0;
   background-color: #d5c75f;
   border-style: 5px;
+  margin: auto;
 }
 div [class*="imagen"]{
   max-width: 900px;
   flex-wrap: wrap;
+  height: 200px;
 }
+
 /*Translate y Rotate*/
 .img2:hover{
   transform: translate(20px,-5px);
@@ -85,14 +88,7 @@ div [class*="imagen"]{
   transform: rotate(10deg);
   box-shadow: 2px 2px 2px #82c3a6;
 }
-/*.imagen3{
-	width: 75%;
-  height: 80%;
-  order: 2;
-  margin: auto;
-  background-color: #d5c75f;
-  text-align: center;
-}*/
+
 /*pie de pagina*/
 div[class*="colum"]{
   display: flex;
@@ -109,60 +105,13 @@ footer {
   border-radius: 0 0 10px 10px;
   text-align: center;
 }
+footer p{
+  margin:1px;
+}
 .faceb{
   width: 5%;
   height: 5%;
 }
-
-
-
-/*div #secundarias{
-  background-color:#d5c75f;
-}*/
-
-/* a{
-  margin-right: 0px;
-} */
-/*div #secundarias{
-  min-height: 200px;
-  flex: 1 2 50%;
-}*/
-
-
- 
-/*@media (min-width: 900px) {
-  .cuerpo{
-    margin-left: 7em;
-    margin-right: 7em;
-  }
-  .texto{
-
-    font-size: 1.6em;
-    font-family: helvetica;
-  }
-  .imagen{
-    margin-left: auto;
-    margin-right: auto;
-    width:60%;
-  }
-}
-
-@media (max-width: 900px) {
-  .cuerpo{
-    margin-left: 3em;
-    margin-right: 3em;
-  }
-  .texto{
-
-    font-size: 1.3em;
-    font-family: helvetica;
-  }
-  .imagen{
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%
-  }
-}*/
 
 /*media queries*/
 @media (max-width:900px) {
@@ -181,14 +130,57 @@ footer {
     display: flex;
     flex-direction: column;
  }
- div[class*="column"]{
-    padding-left: 0;
-    padding-bottom: 5%;
- } 
-}
+ }
 @media (max-width:900px) {
   .contenedor{
     display: flex;
     flex-direction:column;
+  }
+}
+
+/*imagenes con filtros*/
+.paisaje{
+  width: 25%;
+  height: 25%;
+  margin: auto;
+}
+section {
+  background-color: #82c3a6;
+}
+.fila1,.fila2{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.fila1{
+  padding: 50px 0 0 0;
+}
+.fila2{
+  padding: 50px 0 50px 0;
+}
+
+.blur{
+  filter: blur(10px);
+}
+.gris{
+  filter: grayscale(100%);
+}
+.sepia{
+  filter: sepia(90%);
+}
+@media (max-width:900px) {
+  .paisaje{
+    width: 55%;
+    height: 60%;
+  }
+  .fila1,.fila2{
+    flex-direction: column;
+  }
+  .fila1 img{
+    padding: 50px 0 0 0;
+  }
+  .fila2 img{
+    padding: 0 0 50px 0;
   }
 }
